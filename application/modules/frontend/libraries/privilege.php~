@@ -1,0 +1,34 @@
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+/*---------------------------------------------------------------------
+	Class privilege ,generate all request linked to the access controll
+----------------------------------------------------------------------*/
+
+class Privilege {
+
+	private $obj = NULL;
+    function Privilege(){
+		
+		$this->obj= & get_instance();
+	}
+	
+	function check($page_id, $do = null){
+	
+		$sql = "SELECT * FROM user a, akses_user b 
+				WHERE 
+					a.jabatan_id = b.id_jabatan 
+					AND b.modul = '%s' 
+					AND b.%s = '1' 
+					AND a.jabatan_id = '%d'";
+		$sqlf 	= sprintf($sql,	$page_id, $do,$this->obj->session->userdata('jabatan_id')); 		
+		$q 		= $this->obj->db->query($sqlf);
+		// echo $this->obj->db->last_query();
+		if ($q->num_rows() > 0)
+			return true;
+		else 
+			return false; 
+	}
+
+	
+	
+	
+}

@@ -1,0 +1,213 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    font: 12.3px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: 'Monaco','Menlo',monospace;
+    /* The html and body elements cannot have any padding or margin. */
+}
+.page-header{margin:20px 0 20px;}
+input[type='text']{
+
+    /*asc*/
+    height:31px !important;
+
+}
+.btn-search{
+    padding:4px 12px;
+
+    /*border: 1px solid #ddd !important;
+*/
+    margin-left: 2px !important;
+}
+.search-field{border:1px solid #ddd}
+.navbar{
+
+    background : url(../images/navbar.gif) top repeat-x #E7E7E7;
+    #background-color: #566769;
+    border-color: #E7E7E7;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    /*height:auto !important;*/
+}
+
+.navbar-collapse{
+    #background-color: #566769 !important;
+
+}
+.navbar-brand{
+
+    color:#666 !important;
+
+}
+.navbar-nav .open .dropdown-menu {
+    background-color:#666;
+
+}
+
+.navbar-nav .open .dropdown-menu a{color:#333 !important;}
+
+.navbar-nav li a{color:#666 !important;}
+.container > .navbar-header, .container > .navbar-collapse{
+
+    margin-left:0;
+    margin-right:0;
+}
+
+.navbar-nav > li > a:hover {
+
+    color: #009aca !important;height:48px;
+    border-bottom:3px solid #428BCA;
+}
+.navbar-nav li.active a{
+
+    color:orange !important; /*height:48px;*/
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+
+    background-color: #428BCA;
+    color: #666;
+
+}
+
+.navbar-nav > li > .write-article{
+
+    height:50px;
+
+}
+
+.navbar-nav > li > .write-article:hover{
+
+
+    color: #fff !important; height:50px; width: 200px;
+    background: #5cb85c !important;
+    font-weight: bold;
+    border: none !important;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #FFFFFF;
+}
+
+/*Maegin menu*/
+.navbar > .container{margin-left:20px;width:99%;}
+
+
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -50px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px !important;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    min-height: 30px;
+    height:auto;
+    background-color: #f5f5f5;width:100%;
+}
+
+#footer .footer-text{color:#d32132}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+.socmed-fixed{position:fixed;right:-50px;}
+.socmed-fixed a:hover{ text-decoration: none;}
+
+#wrap > .page-container {
+    padding: 60px 20px 0;
+    margin-top:0px;width:98%;
+
+}
+.container .text-muted {
+    margin: 7px 0;
+}
+
+#footer > .container {
+    padding-left: 0px;
+    padding-right: 15px;
+    
+}
+.about-content a:hover{text-decoration: none}
+code {
+    font-size: 80%;
+}
+
+.article-border-separator{border-bottom:1px solid #ddd;margin-top: 10px;margin-bottom: 10px;}
+.article-border-separator-dotted{border-bottom:1px dotted #ddd;margin-top: 10px;margin-bottom: 10px;}
+.detail-article{min-height:300px !important;}
+.hr-separator{border-bottom:2px solid #ddd }
+
+
+
+
+/* This gets Google to fall into place */
+.social {
+    font-size: 1px;
+}
+
+/* This gets Facebook to fall into place */
+.social.Facebook {
+    vertical-align: middle;
+}
+
+/* Set an optional width for your button wrappers */
+.social span {
+    display: inline-block;
+    width: 90px;
+}
+
+/* Adjust the widths individually if you like */
+.social .google {
+    width: 75px;
+}
+
+.social .twitter {
+    padding: 0px 5px 2px 10px;
+}
+
+
+li.user-profile a:hover{border-bottom:none;color:#fff !important;}
+li.profil-active a{color:orange !important;} /*if profile page is active*/
+
+/*pre{line-height: 0.7 !important}
+*/
+pre.prettyprint{border: 1px solid #DDDDDD !important;}
+.navigator{top:45% !important;display: inline-block;position: absolute;z-index: 5}
+
+
+/*Get tid off all rounder border radius*/
+
+* {
+.border-radius(0) !important;
+}
+
+* {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.navbar-nav li.active a {background: none !important;}
+
+h5.a-link a{color:#262626}
+h5.a-link a:visited, h5.a-link i:hover{color:#356635;}
+
+.ul-article{list-style-type:none;margin-left: -40px;font-size:14px;}
+
+.ul-article li a{color:#262626;}
+.ul-article li a:hover{cursor: pointer}
+.ul-article li a:visited, .ul-article li a i:hover{color:#356635;}
+
+.img-thumbnail{background: #ddd;width: 100%}
+.img-thumbnail img {position:relative;width: 100%}
+hr{margin-top: 10px;
+    margin-bottom: 10px;}
