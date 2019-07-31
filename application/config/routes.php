@@ -44,7 +44,6 @@ $route['daftar-berita'] = "frontend/index/daftar_berita";
 $route['daftar-berita/detail/(:any)'] = "frontend/index/read_more2/$1";
 $route['daftar-berita/daftar-kategori(:any)'] = "frontend/index/daftar_kategori/$1";
 $route['daftar-berita/daftar-subkategori(:any)'] = "frontend/index/daftar_subkategori/$1";
-$route['daftar-kategori/(:any)'] = "frontend/index/daftar_kategori/$1";
 $route['gallery'] = "frontend/index/gallery";
 $route['search'] = "frontend/index/search_keyword";
 $route['login'] = "backend/login";
