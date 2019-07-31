@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Web_Informasi</title>
+  <title>News</title>
 
   <!-- Bootstrap core CSS -->
 
@@ -96,18 +96,18 @@ var currentYear = date.getFullYear();
         <div class="left_col scroll-view">
 
           <div class="navbar nav_title" style="border: 0;">
-            <a href="<?=site_url('backend/Welcome/index');?>" class="site_title"><i class="fa fa-paw"></i> <span>Web_Informasi</span></a>
+            <a href="<?=site_url('backend/Welcome/index');?>" class="site_title"><i class="fa fa-paw"></i> <span>News</span></a>
           </div>
           <div class="clearfix"></div>
 
           <!-- menu prile quick info -->
           <div class="profile">
             <div class="profile_pic">
-              <img src="<?php echo base_url('assets/production/images/img.jpg') ?>" alt="..." class="img-circle profile_img">
+              <img src="<?php echo base_url('assets/production/images/111.jpg') ?>" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
               <span>Welcome,</span>
-              <h2><?php echo $this->session->userdata("nama"); ?></h2>
+              <h2><?php echo $this->session->userdata('name'); ?></h2>
             </div>
           </div>
           <!-- /menu prile quick info      -->
@@ -120,9 +120,7 @@ var currentYear = date.getFullYear();
             
             <div class="menu_section"><br><br><br>
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-home"></i> Dashboard </a>
-                 
-                </li>
+               
                 <li><a><i class="fa fa-desktop"></i> Posts<span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
                      <li><a href="<?=site_url('backend/post/index');?>">Post</a>
@@ -131,17 +129,13 @@ var currentYear = date.getFullYear();
                     </li>
                      <li><a href="<?=site_url('backend/subcategory/index');?>">Subcategory</a> 
                     </li>
-
-                    <!--member perusahaan kategori privat jadi hanya orang yang sudah login yang bisa melihat detailnya-->
-                   
-                   <!-- <li><a href="index2.html">Dashboard2</a>
+                     <li><a href="<?=site_url('backend/gallery/index');?>">Gallery</a> 
                     </li>
-                    <li><a href="index3.html">Dashboard3</a>
-                    </li>-->
+
+                   
                   </ul>
                 </li>
-               <!--  <li><a href="<?=site_url('backend/data_kontak/tampil_data_kontak');?>"><i class="fa fa-inbox"></i> Kotak saran</a>
-                </li> -->
+              
               </ul>
             </div>
 
@@ -185,7 +179,7 @@ var currentYear = date.getFullYear();
                 
                   <li>
 
-                  <a href="<?php echo base_url('backend/data_login/logout'); ?>"> <i class="fa fa-sign-out pull-right" title="Log Out"></i></a>
+                  <a href="<?php echo base_url('backend/login/logout'); ?>"> <i class="fa fa-sign-out pull-right" title="Log Out"></i></a>
                   </li>
                 
               </li>

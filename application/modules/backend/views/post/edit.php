@@ -87,7 +87,7 @@
                       </div>
                     </div>
                      <div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12">Subcategory</label>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12">Featured Image</label>
                         <div class="col-md-9 col-sm-9 col-xs-12">
                         <input type="file" id="image" name="image" class="form-control col-md-7 col-xs-12">
                         <img style="width: 200px;height: 200px;" src="<?=base_url()?>assets/uploads/<?=$row->img;?>">

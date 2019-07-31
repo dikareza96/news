@@ -46,9 +46,16 @@
       <div id="login" class="animate form">
         <section class="login_content">
         
-          <form action="<?php echo base_url('backend/data_login/aksi_login'); ?>" method="POST">
+          <form action="<?php echo base_url('backend/login/proses'); ?>" method="get">
             <h1>Login</h1>
-            
+             <?php
+                  if (validation_errors() || $this->session->flashdata('result_login')) {
+                      ?>
+                      <div class="alert alert-error" style="background:red; color:white">
+                          <strong>Peringatan!</strong>
+                          <?php echo $this->session->flashdata('result_login'); ?>
+                      </div>
+                  <?php } ?>
             <div>
               <input type="text" class="form-control" placeholder="Username" name="username" required="" />
             </div>
@@ -57,7 +64,7 @@
             </div>
             <div> 
                <input class="btn btn-default submit" type="submit" name="submit" value="Login">
-              <a class="reset_pass" href="#">Lupa Password</a>
+              
             </div>
             <div class="clearfix"></div>
             <div class="separator">
@@ -69,8 +76,8 @@
               <br />
               <div>
                 
-                <h1><i class="fa fa-paw" style="font-size: 26px;"></i>Politeknik Kediri</h1>
-<i class="fa fa-home" style="font-size: 26px;"></i><a style="font-size: 22px;" href="<?=site_url('frontend/welcome');?>">FRONT END</a>
+               
+<i class="fa fa-home" style="font-size: 26px;"></i><a style="font-size: 22px;" href="<?=site_url('');?>">FRONT END</a>
                 <p></p>
               </div>
             </div>
@@ -79,41 +86,7 @@
         </section>
         <!-- content -->
       </div>
-      <div id="register" class="animate form">
-        <section class="login_content">
-          <form>
-            <h1>Create Account</h1>
-            <div>
-              <input type="text" class="form-control" placeholder="Username" required="" />
-            </div>
-            <div>
-              <input type="email" class="form-control" placeholder="Email" required="" />
-            </div>
-            <div>
-              <input type="password" class="form-control" placeholder="Password" required="" />
-            </div>
-            <div>
-              <a class="btn btn-default submit" href="index.html">Submit</a>
-            </div>
-            <div class="clearfix"></div>
-            <div class="separator">
-
-              <p class="change_link">Already a member ?
-                <a href="#tologin" class="to_register"> Log in </a>
-              </p>
-              <div class="clearfix"></div>
-              <br />
-              <div>
-                <h1><i class="fa fa-paw" style="font-size: 26px;"></i> Gentelella Alela!</h1>
-
-                <p>©2015 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
-              </div>
-            </div>
-          </form>
-          <!-- form -->
-        </section>
-        <!-- content -->
-      </div>
+     
     </div>
   </div>
 

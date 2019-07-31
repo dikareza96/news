@@ -5,7 +5,7 @@
     <div class="page-title">
       <div class="title_left">
         <h3>
-          Data Post
+          Data Gallery
                     <!--<small>
                         Some examples to get you started
                       </small> -->
@@ -30,27 +30,20 @@
                             <tr>
                               <th>No</th>
                               <th>Title</th>
-                              <th>Total Views</th>
-                              <th>Featured Image</th>
-                              <th>Category</th>
-                              <th>Subcategory</th>
-                              <th>Date Created</th>
+                              <th> Image</th>
                               <th>Aksi</th>
                             </tr>
                           </thead>
                            <tbody>
 
                             <?php $no=1; 
-                            foreach ($post as $row) {
+                            foreach ($gallery as $row) {
                               ?>
                               <tr>
                                 <td><?php echo $no++ ?></td>
                                 <td><?php echo $row->title ?></td>
-                                <td><?php echo $row->total_view ?></td>
                                 <td><img style="width: 50px;height: 50px;" src="<?=base_url()?>assets/uploads/<?=$row->img;?>"></td>
-                                <td><?php echo $row->category_name ?></td>
-                                <td><?php echo $row->subcategory_name ?></td>
-                                <td><?php echo date("D, d M Y H:i", strtotime($row->created_at)) ?> WIB</td>
+                               
                                 <td>
                                   <a href="<?php echo base_url("backend/".$route."/edit/$row->id") ?>"><i class="fa fa-edit"></i></a>
                                   <a href="<?php echo base_url("backend/".$route."/destroy/$row->id") ?>"><i class="fa fa-close"></i></a>

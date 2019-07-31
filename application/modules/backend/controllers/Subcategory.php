@@ -8,7 +8,10 @@ class Subcategory extends CI_Controller {
 	function __construct(){ 
 		parent::__construct();				
 		$this->load->model(array('Resource','Query')); 
-		
+		if($this->session->userdata('level') <> 'admin')
+		{
+			redirect('backend/login');
+		}
 	}
 	protected $table = 'subcategory';
 

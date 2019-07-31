@@ -39,32 +39,12 @@
         <!--// Header \\-->
 		<header id="wm-header" class="navbar navbar-fixed-top wm-header-three">
 
-                 <!--// TopStrip \\-->
-           <!--  <div class="wm-topstrip " >
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            
-                            <div class="wm-right-section">
-                                <ul class="wm-stripinfo">
-                                    <li><i class="wmicon-location"></i> Jl Mayor Bismo no 27 Kota, Kediri</li>
-                                    <li><i class="wmicon-technology4"></i> (0354) 683128</li>
-                                    <li><a href="mailto:info@poltek-kediri.ac.id"><i class="wmicon-letter"></i>  <span style="color:#3498db;"> info@poltek-kediri.ac.id</span></li>
-
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!--// TopStrip \\-->
-
+             
             <!--// MainHeader \\-->
             <div class="wm-main-header wm-bgcolor-three ">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2"><a href="<?=site_url('lowongan-terbaru');?>" class="wm-logo"><img src="<?php echo base_url(); ?>assets//images/final.png" alt=""></a></div>
+                        <div class="col-md-2"><a href="<?=site_url('home');?>" class="wm-logo"><img src="<?php echo base_url(); ?>assets//images/final.png" alt=""></a></div>
                         <div class="col-md-10">
                             <div class="wm-right-section">
                                 <!--// Navigation \\-->
@@ -79,38 +59,16 @@
                                     </div>
                                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                                       <ul class="nav navbar-nav">
-                                    <li class="active"><a href="<?=site_url('lowongan-terbaru');?>">Home</a>
-                                        <!-- <ul class="wm-dropdown-menu">
-                                            <li><a href="index.html">Education Home V1</a></li>
-                                            <li><a href="index-two.html">Education Home V2</a></li>
-                                            <li><a href="index-three.html">Education Home V3</a></li>
-                                            <li><a href="index-four.html">Education Home V4</a></li>
-                                        </ul> -->
+                                    <li class="active"><a href="<?=site_url('home');?>">Home</a>
+                                      
                                     </li>
-                                    <li><a href="<?=site_url('daftar-lowongan');?>">Daftar Berita</a>
-                                       <!--  <ul class="wm-dropdown-menu">
-                                            <li><a href="courses-grid.html">Courses Grid</a></li>
-                                            <li><a href="courses-list.html">Daftar Lowongan</a></li>
-                                            <li><a href="courses-detail.html">Courses Detail</a></li>
-                                        </ul> -->
+                                    <li><a href="<?=site_url('daftar-berita');?>">Daftar Berita</a>
+                                      
                                     </li>
-                                    <li><a href="<?=site_url('daftar-lowongan');?>">Gallery</a>
-                                       <!--  <ul class="wm-dropdown-menu">
-                                            <li><a href="courses-grid.html">Courses Grid</a></li>
-                                            <li><a href="courses-list.html">Daftar Lowongan</a></li>
-                                            <li><a href="courses-detail.html">Courses Detail</a></li>
-                                        </ul> -->
+                                    <li><a href="<?=site_url('gallery');?>">Gallery</a>
+                                      
                                     </li>
-                                    <li><a href="<?=site_url('tentang-kami');?>">Tentang Kami</a>
-                                        <!-- <ul class="wm-dropdown-menu">
-                                            <li><a href="event-grid.html">Event Grid</a></li>
-                                            <li><a href="event-detail.html">Event Detail</a></li>
-                                        </ul> -->
-                                    </li>
-                                    
-                                    <li class="wm-megamenu-li"><a href="<?=site_url('kontak');?>">Kontak Kami</a>
-                                        
-                                    </li>
+                                  
                                   </ul>
                                     </div>
                                 </nav>

@@ -39,17 +39,15 @@
 */
 
 $route['default_controller'] = "frontend/index/home";
-$route['lowongan-terbaru'] = "frontend/index/home";
-$route['daftar-lowongan'] = "frontend/index/daftar_lowongan";
-$route['daftar-lowongan/detail/(:any)'] = "frontend/index/read_more2/$1";
-$route['daftar-lowongan/daftar-lokasi(:any)'] = "frontend/index/daftar_lokasi/$1";
-$route['daftar-lowongan/daftar-kategori(:any)'] = "frontend/index/daftar_kategori/$1";
+$route['home'] = "frontend/index/home";
+$route['daftar-berita'] = "frontend/index/daftar_berita";
+$route['daftar-berita/detail/(:any)'] = "frontend/index/read_more2/$1";
+$route['daftar-berita/daftar-kategori(:any)'] = "frontend/index/daftar_kategori/$1";
+$route['daftar-berita/daftar-subkategori(:any)'] = "frontend/index/daftar_subkategori/$1";
 $route['daftar-kategori/(:any)'] = "frontend/index/daftar_kategori/$1";
-$route['tentang-kami'] = "frontend/index/about";
-$route['kontak'] = "frontend/index/contact";
+$route['gallery'] = "frontend/index/gallery";
 $route['search'] = "frontend/index/search_keyword";
-// $route['kontak'] = "frontend/kontak/input_data_kontak";
-$route['login-admin'] = "backend/data_login";
+$route['login'] = "backend/login";
 
 
 

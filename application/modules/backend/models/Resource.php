@@ -10,6 +10,8 @@ class Resource extends CI_Model{
 		$this->load->database();
 		$this->db->insert($table,$data);
 	}
+
+	
 	
 	function edit($where,$table){	
 		$this->load->database();	

@@ -34,9 +34,9 @@
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Content<span class="required"></span>
                       </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
+                     <div class="col-md-9 col-sm-9 col-xs-12">
                          
-                         <textarea id="editor1" name="content" rows="10" cols="80">
+                         <textarea class="col-md-9 col-sm-9 col-xs-12" id="editor1" name="content" rows="10" cols="80">
                                            
                     </textarea>
                       </div>
@@ -44,7 +44,7 @@
 
                     <div class="form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12">Category</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                         <div class="col-md-6 col-sm-6 col-xs-12">
                         <select class="select2_single form-control" id="post_category" name="post_category" tabindex="-1">
                           <option value>Select a category</option>
                             <?php
@@ -60,7 +60,7 @@
                      
                     <div class="form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12">Subcategory</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                         <div class="col-md-6 col-sm-6 col-xs-12">
                         <select class="select2_single form-control" id="post_subcategory" name="post_subcategory" tabindex="-1">
                           <option value>Select a subcategory</option>
                             <?php
@@ -74,8 +74,8 @@
                       </div>
                     </div>
                      <div class="form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12">Subcategory</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12">Featured Image</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
                         <input type="file" id="image" name="image" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>

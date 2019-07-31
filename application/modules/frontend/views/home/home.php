@@ -23,12 +23,7 @@
                                     </li>
                                 </ul>
                             </div>
-                          <!--   <ul class="contact-social-icon">
-                                <li><a href="#"><i class="wm-color wmicon-social5"></i> Facebook</a></li>
-                                <li><a href="#"><i class="wm-color wmicon-social4"></i> Twitter</a></li>
-                                <li><a href="#"><i class="wm-color wmicon-social3"></i> Linkedin</a></li>
-                                <li><a href="#"><i class="wm-color wmicon-vimeo"></i> Vimeo</a></li>
-                            </ul> -->
+                         
                         </div>
 
                     </div>
@@ -41,100 +36,26 @@
             <div class="wm-main-section">
                 <div class="container">
                     <div class="row">
-                    <!--     <div class="wm-filterable">
-                            <ul>
-                                <li>                                                            
-                                    <a href="casestudy-single-post.html" data-filter="*" class="active">All</a>             
-                                </li>
-                                <li>                                                                    
-                                    <a href="casestudy-single-post.html" data-filter=".jquery">University</a>
-                                </li>
-                                <li>
-                                    <a href="casestudy-single-post.html" data-filter=".php">Campus</a>
-                                </li>
-                                <li>
-                                    <a href="casestudy-single-post.html" data-filter=".wordpress">Professors</a>
-                                </li>
-                                <li>
-                                    <a href="casestudy-single-post.html" data-filter=".jquery">Classes</a>
-                                </li>
-                            </ul>
-                        </div>   -->    
+                   
                         <div class="wm-gallery">
                             <ul class="row">
+                                <?php foreach ($gallery as $row) {?>
                                 <li class="col-md-4 wordpress">
                                     <figure>
-                                        <a href="#"><img src="<?=base_url()?>assets/education-html/extra-images/gallery-1.jpg" alt=""></a>                                       
+                                        <a href="#"><img src="<?=base_url()?>assets/uploads/<?=$row->img;?>" style="height: 217px" alt=""></a>                                       
                                         <figcaption>
                                             <div class="wm-gallery-text">
                                                 <a href="#" class="wmicon-search wm-icon-gallery"></a>
-                                                <h6>Students studying hard in Campus L3</h6>
+                                                <h6><?php echo $row->title;?></h6>
                                             </div>                                                                                      
                                         </figcaption>                                           
                                     </figure>
                                 </li>
-                                 <li class="col-md-4 wordpress">
-                                    <figure>
-                                        <a href="#"><img src="<?=base_url()?>assets/education-html/extra-images/gallery-1.jpg" alt=""></a>                                       
-                                        <figcaption>
-                                            <div class="wm-gallery-text">
-                                                <a href="#" class="wmicon-search wm-icon-gallery"></a>
-                                                <h6>Students studying hard in Campus L3</h6>
-                                            </div>                                                                                      
-                                        </figcaption>                                           
-                                    </figure>
-                                </li>
-                                 <li class="col-md-4 wordpress">
-                                    <figure>
-                                        <a href="#"><img src="<?=base_url()?>assets/education-html/extra-images/gallery-1.jpg" alt=""></a>                                       
-                                        <figcaption>
-                                            <div class="wm-gallery-text">
-                                                <a href="#" class="wmicon-search wm-icon-gallery"></a>
-                                                <h6>Students studying hard in Campus L3</h6>
-                                            </div>                                                                                      
-                                        </figcaption>                                           
-                                    </figure>
-                                </li>
-                                 <li class="col-md-4 wordpress">
-                                    <figure>
-                                        <a href="#"><img src="<?=base_url()?>assets/education-html/extra-images/gallery-1.jpg" alt=""></a>                                       
-                                        <figcaption>
-                                            <div class="wm-gallery-text">
-                                                <a href="#" class="wmicon-search wm-icon-gallery"></a>
-                                                <h6>Students studying hard in Campus L3</h6>
-                                            </div>                                                                                      
-                                        </figcaption>                                           
-                                    </figure>
-                                </li>
-                                 <li class="col-md-4 wordpress">
-                                    <figure>
-                                        <a href="#"><img src="<?=base_url()?>assets/education-html/extra-images/gallery-1.jpg" alt=""></a>                                       
-                                        <figcaption>
-                                            <div class="wm-gallery-text">
-                                                <a href="#" class="wmicon-search wm-icon-gallery"></a>
-                                                <h6>Students studying hard in Campus L3</h6>
-                                            </div>                                                                                      
-                                        </figcaption>                                           
-                                    </figure>
-                                </li>
-                                 <li class="col-md-4 wordpress">
-                                    <figure>
-                                        <a href="#"><img src="<?=base_url()?>assets/education-html/extra-images/gallery-1.jpg" alt=""></a>                                       
-                                        <figcaption>
-                                            <div class="wm-gallery-text">
-                                                <a href="#" class="wmicon-search wm-icon-gallery"></a>
-                                                <h6>Students studying hard in Campus L3</h6>
-                                            </div>                                                                                      
-                                        </figcaption>                                           
-                                    </figure>
-                                </li>
-                                
-                                
-                                
+                                 <?php } ?>
                                 
                             </ul>
                         </div>
-                        <div class="wm-pagination">
+                        <!-- <div class="wm-pagination">
                             <ul>
                                 <li>
                                   <a href="#" aria-label="Previous">
@@ -156,7 +77,7 @@
                                   </a>
                                 </li>
                             </ul>
-                        </div>                  
+                        </div>        -->           
                     </div>
                 </div>
             </div>
@@ -182,9 +103,9 @@
                                     <?php foreach ($post as $row) {?>
                                     <li class="col-md-3">
 
-                                        <figure><a href=""><img style="width: 175px;height: 220px;" src="<?=base_url()?>assets/uploads/<?=$row->img;?>" alt=""></a> <span></span> <figcaption> <a href="<?php echo base_url("daftar-lowongan/detail/$row->slug")?>" class="wm-coursemodren-btn wm-color-three">Lebih lanjut</a> </figcaption> </figure>
+                                        <figure><a href=""><img style="width: 175px;height: 220px;" src="<?=base_url()?>assets/uploads/<?=$row->img;?>" alt=""></a> <span><?php echo date("D, d M Y H:i", strtotime($row->created_at)) ;?> WIB</span> <figcaption> <a href="<?php echo base_url("daftar-berita/detail/$row->slug")?>" class="wm-coursemodren-btn wm-color-three">Lebih lanjut</a> </figcaption> </figure>
                                         <div class="wm-courses-grid-text">
-                                            <h5><a title="<?php echo $row->title?>" href="<?php echo base_url("daftar-lowongan/detail/$row->slug/")?>" class="wm-color-three"><?php
+                                            <h5><a title="<?php echo $row->title?>" href="<?php echo base_url("daftar-berita/detail/$row->slug/")?>" class="wm-color-three"><?php
                 $limited_word = word_limiter($row->title,4);
                 echo $limited_word;?></a></h5>
                                             <ul class="courses-options">
